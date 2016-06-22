@@ -1,0 +1,393 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>A Hip-Hop Timeline</title>
+  <meta name="description" content="hip-hop timeline project">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+    .rapperText {
+    font-size: 11px;
+    }
+    * {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      box-sizing: border-box;
+      text-rendering: optimizeLegibility;
+    }
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      color: mediumblue;
+      font:400 15px/1.2 'Roboto Slab',sans-serif;
+    }
+    /* Typography */
+    .header {
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      text-align: center;
+    }
+    .siteTitle {
+      font-size: 60px;
+    }
+    .sectionTitle,
+    .description {
+      max-width: 500px;
+    }
+    .description {
+      font-size: 1.2em;
+      margin: 1em auto;
+      text-align: center;
+    }
+    .sectionTitle {
+      font-size: 2.2em;
+      margin: 2em auto;
+      text-align: center;
+    }
+    h3,p  {
+      margin-bottom: .2em;
+      margin-top: .2em;
+    }
+    .rapper > h3 {
+      font-size: 13.5px;
+    }
+    .rapper p {
+      font-size: 12.5px;
+    }
+    .outerUrl{
+      border-radius: 8px;
+      color: white;
+      font-size: 12px;
+      margin-top: .2em;
+      padding: 12px 0;
+      text-decoration: none;
+    }
+    .outerUrl:hover {
+      background: gold;
+      color: mediumblue;
+    }
+    /* Buttons */
+    .buttonToolbar {
+      display: block;
+      margin: .5em auto;
+      text-align: center;
+    }
+    .buttonToolbar button {
+      background: #fff;
+      border: 2px solid mediumblue;
+      color: mediumblue;
+      font-weight: 700;
+      padding: 6px 12px;
+    }
+    .buttonToolbar button:hover {
+      background: mediumblue;
+      color: #fff;
+    }
+    /* Chart */
+    .chart {
+      display: block;
+      margin: 0 auto;
+    }
+    .axis text {
+      fill: mediumblue
+    }
+    .axis line {
+      stroke: mediumblue;
+    }
+    .axis.y line,
+    .axis.y path {
+      stroke: none;
+    }
+    .dots {
+      fill: rgba(0,0,255,0.3);
+    }
+    .rapperText {
+      fill: mediumblue;
+      font-weight: 700;
+    }
+    .domain {
+      fill: none;
+      stroke: mediumblue;
+    }
+    /* Giant Timeline */
+    .yearBlock {
+      background: white;
+      border: 5px solid mediumblue;
+      margin: 1em auto 3em;
+      min-height: 320px;
+      padding: 5px;
+      position: relative;
+      text-align: center;
+      width: 320px;
+    }
+    .yearTitle {
+      font-size: 60px;
+      left: 80px;
+      position: absolute;
+      text-align: center;
+      top: 70px;
+    }
+    .rapper {
+      background: mediumblue;
+      border-radius: 8px;
+      color: white;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      left: 350px;
+      margin-bottom: 2em;
+      padding: 5px;
+      position: relative;
+      width: 200px;
+    }
+    .rapper:before {
+      border-top: 5px solid mediumblue;
+      content: '';
+      display: block;
+      position: relative;
+      right: 52px;
+      top: 10px;
+      width: 50px;
+      z-index: -9;
+    }
+    .rapper:nth-of-type(even) {
+      left: -260px;
+    }
+    .rapper:nth-of-type(even):before {
+      border: 0;
+    }
+    .rapper:nth-of-type(even):after {
+      border-top: 5px solid mediumblue;
+      bottom: 10px;
+      content: '';
+      display: block;
+      left: 195px;
+      position: relative;
+      width: 50px;
+      z-index: 0;
+    }
+    /* Toggle */
+    .hidden {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+    @media screen and (max-width: 920px){
+      .yearBlock{
+        border: 0;
+      }
+      .yearTitle {
+        border: 5px solid mediumblue;
+        margin: 30px auto;
+        padding: 20px;
+        position: static;
+        display: block;
+      }
+      .rapper{
+        position: static;
+        margin: 30px auto;
+      }
+      .rapper:before,
+      .rapper:nth-of-type(even):before {
+        content: '';
+        border-top: 5px solid mediumblue;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        z-index: 9;
+        position: relative;
+        top: -20px;
+        left: 40%;
+        width: 36px;
+      }
+      .rapper:after {
+        border-top: 0;
+        position: static;
+      }
+      .rapper:nth-of-type(even):after{
+        border-top: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="siteTitle">Hip Hop Timeline</h1>
+    <p class="description">Three years ago I started collecting the names of US based rappers who identified as women. Even though this list has a long ways to go, it's my starting point. Click on the "short" button to view a scatterplot of when rappers came onto the scene. Click on the "long" button to view a detailed timeline with links to videos</p>
+    <div class="buttonToolbar">
+      <a href="#short"><button>Short</button></a>
+      <a href="#long"><button>Long</button></a>
+    </div>
+  </header>
+  <main class="content"></main>
+</body>
+
+<script>
+  var margin = {top: 20, right: 50, bottom: 50, left: 50};
+  var width = 700 - margin.left - margin.right,
+  height = 200 - margin.top - margin.bottom;
+
+  var xScale = d3.time.scale()
+  .range([0, width]);
+
+  var yScale = d3.scale.linear()
+  .domain([0,12])
+  .range([height,0])
+
+  var xAxis = d3.svg.axis()
+  .scale(xScale)
+  .orient("bottom")
+  .ticks(6)
+  .tickFormat(d3.time.format("%Y"))
+
+  var yAxis = d3.svg.axis()
+  .scale(yScale)
+  .orient("left")
+  .ticks(4)
+
+  var parseDate = d3.time.format("%Y").parse,
+  formatDate = d3.time.format("%Y");
+
+  var scatterPlot = d3.select(".content")
+  .append("section")
+  .attr("class", "scatterPlot")
+  .attr("id", "short")
+
+  d3.csv("rappersByYear.csv", function(error, data) {
+    if (error) return console.warn(error);
+
+    scatterPlot.append("h2")
+    .attr("class", "sectionTitle")
+    .text("Years Rappers Premiered")
+
+    var svg = d3.select(".scatterPlot").append("svg")
+    .attr("class", "chart")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    xScale.domain(d3.extent(data, function(d) {return parseDate(d.Year); })).nice();
+
+    svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .attr("class", "x axis")
+    .call(xAxis)
+
+    svg.append("g")
+    .attr("class", "y axis")
+    .call(yAxis)
+
+    var circleGroups = svg.selectAll(".circleGroups")
+    .data(data)
+    .enter().append("g")
+      .attr("class", "circleGroups")
+
+
+    circleGroups.each(function() {
+      var rapperDot = d3.select(this);
+      rapperDot.attr("transform", function(d) {return "translate(" + xScale(parseDate(d.Year)) + "," + height + ")"})
+      .append("circle")
+      .attr("class", "dots")
+      .attr("r", 5)
+    })
+
+    d3.selectAll(".circleGroups")
+      .transition()
+      .duration(3500)
+      .ease("linear")
+      .attr("transform", function(d) {return "translate(" + xScale(parseDate(d.Year)) + "," + yScale(d.GroupID) + ")"})
+
+    circleGroups.on("mouseenter", function(){
+        d3.select(this).append("text")
+        .attr("class", "rapperText")
+        .text(function(d) {return d.Name})
+      })
+      .on("mouseleave", function() {
+        d3.select(this).select("text").remove();
+      })
+
+    // LARGE Timeline
+    var plainTimelineData = d3.nest()
+    .key(function(d) { return d.Year })
+    .entries(data)
+
+    var largeTimeline = d3.select(".content")
+    .append("section")
+    .attr("class", "largeTimeline")
+    .attr("id", "long")
+
+    largeTimeline.append("h2")
+    .attr("class", "sectionTitle")
+    .text("The Long List")
+
+    largeTimeline.append("p")
+    .attr("class", "description")
+    .text("hover over names to see first single. click on single to listen to it on YouTube.")
+
+    var yearBlock = largeTimeline.selectAll(".yearBlock")
+    .data(plainTimelineData)
+    .enter().append("div")
+    .attr("class", "yearBlock")
+
+    yearBlock.append("h2")
+    .attr("class", "yearTitle")
+    .text(function(d) {return d.key})
+
+    yearBlock.each(function() {
+     var rapperBlock = d3.select(this);
+     rapperBlock.selectAll("div")
+     .data(function(d) { return d.values; })
+     .enter().append("div")
+     .attr("class", "rapper")
+     .append("h3")
+     .text(function(d) {return d.Name; })
+     rapperBlock.selectAll(".rapper")
+     .append("p")
+     .text(function(d) {return d.SecondaryName; })
+   })
+
+    d3.selectAll(".rapper")
+    .on("mouseenter", function(){
+     d3.select(this)
+     .append("a")
+     .attr("class","outerUrl")
+     .attr("href", function(d) {return d.Url})
+     .attr("target", "_blank")
+     .text(function(d) {return d.Single})
+   })
+    .on("mouseleave" , function() {
+     d3.select(this).select(".outerUrl").remove()
+   })
+
+  });
+</script>
+
+</html>
