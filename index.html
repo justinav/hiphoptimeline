@@ -179,63 +179,69 @@
     }
     /* Giant Timeline */
     .yearBlock {
-      background: white;
       border: 5px solid mediumblue;
       margin: 1em auto 3em;
-      min-height: 320px;
-      padding: 5px;
-      position: relative;
       text-align: center;
-      width: 320px;
+      display: block;
+      width: 310px;
+      min-height: 300px;
+      position:relative;
     }
     .yearTitle {
       font-size: 60px;
-      left: 80px;
-      position: absolute;
       text-align: center;
-      top: 70px;
+    }
+    .yearTitle {
+      padding: 0;
+      display: block;
+      position: absolute;
+      top: 80px;
+      top: calc(50% - 40px);
+      left: 85px;
+      left: calc(50% - 63px);
+      margin-top: 0;
+      height: 100%;
     }
     .rapper {
-      background: mediumblue;
-      border-radius: 8px;
-      color: white;
       display: flex;
       flex-flow: column wrap;
       justify-content: center;
-      left: 350px;
-      margin-bottom: 2em;
-      padding: 5px;
-      position: relative;
-      width: 200px;
-    }
-    .rapper a {
+      background: mediumblue;
+      border-radius: 8px;
       color: white;
+      margin-bottom: 2em;
+      padding: 0 5px 8px;
+      max-width: 200px;
+      position: relative;
     }
     .rapper:before {
-      border-top: 5px solid mediumblue;
       content: '';
+      font-size: 20px;
+      color: red;
       display: block;
       position: relative;
-      right: 52px;
-      top: 10px;
-      width: 50px;
+      width: 30px;
+      height: 5px;
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
       z-index: -9;
+      margin: 0;
+      padding: 0;
+      top: 10px;
+    }
+    .rapper:nth-of-type(odd) {
+      left: 330px;
+    }
+    .rapper:nth-of-type(odd):before {
+      border-bottom: 5px solid mediumblue;
+      right: 30px;
     }
     .rapper:nth-of-type(even) {
-      left: -260px;
+      left: -230px;
     }
     .rapper:nth-of-type(even):before {
-      border: 0;
-    }
-    .rapper:nth-of-type(even):after {
-      border-top: 5px solid mediumblue;
-      bottom: 10px;
-      content: '';
-      display: block;
-      left: 195px;
-      position: relative;
-      width: 50px;
-      z-index: 0;
+      border-bottom: 5px solid mediumblue;
+      left: 191px;
     }
     /* Toggle */
     .hidden {
@@ -259,10 +265,7 @@
         position: static;
         margin: 30px auto;
       }
-      .rapper:before,
-      .rapper:nth-of-type(even):before {
-        content: '';
-        border-top: 5px solid mediumblue;
+      .rapper:before {
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
         z-index: 9;
@@ -270,13 +273,6 @@
         top: -20px;
         left: 40%;
         width: 36px;
-      }
-      .rapper:after {
-        border-top: 0;
-        position: static;
-      }
-      .rapper:nth-of-type(even):after {
-        border-top: 0;
       }
     }
   </style>
