@@ -44,10 +44,19 @@
       color: mediumblue;
       font:400 15px/1.2 'Roboto Slab',sans-serif;
     }
+    a, a:visited {
+      color: mediumblue;
+    }
+    a:hover, a:active {
+      color: gold;
+    }
     /* Typography */
     .header {
       margin-bottom: 30px;
-      padding-bottom: 30px;
+    }
+    .header,
+    .footer {
+      padding: 10px;
       text-align: center;
     }
     .siteTitle {
@@ -194,6 +203,9 @@
       position: relative;
       width: 200px;
     }
+    .rapper a {
+      color: white;
+    }
     .rapper:before {
       border-top: 5px solid mediumblue;
       content: '';
@@ -271,6 +283,9 @@
     <p class="description">Three years ago I started collecting the names of US based rappers who identified as women.</p>
   </header>
   <main class="content"></main>
+  <footer class="footer">
+    <small>Work by <a href="http://jusv.co" target="_blank">Justina Villanueva</a></small>
+  </footer>
 </body>
 
 <script>
