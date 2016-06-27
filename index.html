@@ -163,6 +163,11 @@
     .dots {
       fill: rgba(0,0,255,0.3);
     }
+    .rapperTextOutline {
+      fill: white;
+      font-size: 11.5px;
+      font-weight: 700;
+    }
     .rapperText {
       fill: mediumblue;
       font-size: 11px;
@@ -363,19 +368,26 @@
         .attr("class", "y axis")
         .call(y2Axis)
 
+    reverseSort = data.sort(function(a,b) {return parseDate(b.Year) - parseDate(a.Year); })
+
     var circleGroups = regionSvg.selectAll(".circleGroups")
-        .data(data)
+        .data(reverseSort)
       .enter().append("g")
         .attr("class", function(d) {return "circleGroups " + d.Name})
 
     circleGroups.on("mouseenter", function(){
         d3.select(this)
       .append("text")
-        .attr("class", "rapperText")
+        .attr("class", "rapperTextOutline")
         .attr('dx', 45)
+        .text(function(d) {return d.Name})
+      d3.select(this).append("text")
+        .attr("class", "rapperText")
+        .attr('dx', 46)
         .text(function(d) {return d.Name})
     })
     .on("mouseleave", function() {
+        d3.select(this).select("text").remove();
         d3.select(this).select("text").remove();
     })
     circleGroups.each(function() {
