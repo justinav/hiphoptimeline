@@ -1,165 +1,183 @@
-Name,SecondaryName,Year,Single,Url,GroupID
-"Pebblee-Poo, Sweet and Sour, and MC Smiley",The Herculoids,1976,"""Fly Guy"" by Pebblee-Poo",https://www.youtube.com/watch?v=Y6RJcXHUszg,1
-Lady B,Wendy Clark,1979,"""To the Beat Y'all""",https://www.youtube.com/watch?v=cmTssM-tAuw,1
-MC Sha Rock,Funky Four Plus One,1979,"""Rappin & Rocking The House""",https://www.youtube.com/watch?v=-umSairtriU,2
-Angie B,The Sequence,1979,"""Funk You Up""",https://www.youtube.com/watch?v=F_gF1v1xZDc,3
-Zulu Queen Lisa Lee,Zulu Nation,1980,"“Zulu Nation Throwdown” with Afrika Bambaataa, Zulu Nation, Cosmic Force",https://www.youtube.com/watch?v=6qjsZJWjKM0,1
-E.S.G.,"Esmerald, Sapphire, Gold",1981,"""Erase You""",https://www.youtube.com/watch?v=Vy_U-0s1_G8,1
-MC Debbie Dee,,1981,"""Beat Street Us Girls"" with Sha-Rock and Lisa Lee",https://www.youtube.com/watch?v=0h41UjR5jEk,2
-Debbie Harry,Blondie,1981,"""Rapture""",https://www.youtube.com/watch?v=pHCdS7O248g,3
-Roxanne Shante,,1984,"""Roxanne's Revenge""",https://www.youtube.com/watch?v=0eckRNcHCKA,1
-Salt-N-Pepa,,1985,"""None Of Your Business""",https://www.youtube.com/watch?v=_Q96-e042bk,1
+Name,SecondaryName,Year,Single,Url,GroupID,Origin,USRegion,RegionID
+"Pebblee-Poo, Sweet and Sour, and MC Smiley",The Herculoids,1976,"""Fly Guy"" by Pebblee-Poo",https://www.youtube.com/watch?v=Y6RJcXHUszg,1,"Bronx, NY",East Coast,1
+Lady B,Wendy Clark,1979,"""To the Beat Y'all""",https://www.youtube.com/watch?v=cmTssM-tAuw,1,"Philadelphia, PA",East Coast,2
+MC Sha Rock,Funky Four Plus One,1979,"""Rappin & Rocking The House""",https://www.youtube.com/watch?v=-umSairtriU,2,"Bronx, NY",East Coast,3
+Angie B,The Sequence,1979,"""Funk You Up""",https://www.youtube.com/watch?v=F_gF1v1xZDc,3,"Columbia, South Carolina",South,1
+Zulu Queen Lisa Lee,Zulu Nation,1980,"“Zulu Nation Throwdown” with Afrika Bambaataa, Zulu Nation, Cosmic Force",https://www.youtube.com/watch?v=6qjsZJWjKM0,1,"Bronx, NY",East Coast,4
+E.S.G.,"Esmerald, Sapphire, Gold",1981,"""Erase You""",https://www.youtube.com/watch?v=Vy_U-0s1_G8,1,"Bronx, NY",East Coast,5
+MC Debbie Dee,,1981,"""Beat Street Us Girls"" with Sha-Rock and Lisa Lee",https://www.youtube.com/watch?v=0h41UjR5jEk,2,"Harlem, NY",East Coast,6
+Debbie Harry,Blondie,1981,"""Rapture""",https://www.youtube.com/watch?v=pHCdS7O248g,3,"New York, NY",East Coast,7
+Roxanne Shante,,1984,"""Roxanne's Revenge""",https://www.youtube.com/watch?v=0eckRNcHCKA,1,"Queens, NY",East Coast,8
+Salt-N-Pepa,,1985,"""None Of Your Business""",https://www.youtube.com/watch?v=_Q96-e042bk,1,"Queens, NY",East Coast,9
 "JJ Fad
-","Juana Burns (MC J.B.), Dania Birks (Baby-D), Anna Cash (Lady Anna), Fatima Shaheed (O.G. Rocker) and Juanita Lee (Crazy J.)",1985,"""Supersonic""",https://www.youtube.com/watch?v=J3nPLoODtGU,2
-Anquette,,1986,"""Throw the P"" anwser to 2 Live Crew's Throw the D single (explicit)",https://www.youtube.com/watch?v=rnJa2Nf2L0U,1
-The Real Roxanne,Adelaida Martinez,1986,"""Bang Zoom (Let's Go-Go)""",https://www.youtube.com/watch?v=rNtNUBxDjVY,2
-MC Lyte,,1986,"""I Cram to Understand U (Sam)""",https://www.youtube.com/watch?v=Sw1WbJFi5oI,3
-Antoinette,,1987,"""I Got An Attitude""",https://www.youtube.com/watch?v=Zhfm6dVj1QY,1
+","Juana Burns (MC J.B.), Dania Birks (Baby-D), Anna Cash (Lady Anna), Fatima Shaheed (O.G. Rocker) and Juanita Lee (Crazy J.)",1985,"""Supersonic""",https://www.youtube.com/watch?v=J3nPLoODtGU,2,"Rialto, CA",West Coast,1
+The Real Roxanne,Adelaida Martinez,1986,"""Bang Zoom (Let's Go-Go)""",https://www.youtube.com/watch?v=rNtNUBxDjVY,1,"Brooklyn, NY
+",East Coast,10
+MC Lyte,,1986,"""I Cram to Understand U (Sam)""",https://www.youtube.com/watch?v=Sw1WbJFi5oI,2,"Brooklyn, NY
+",East Coast,11
+Anquette,,1986,"""Throw the P"" anwser to 2 Live Crew's Throw the D single (explicit)",https://www.youtube.com/watch?v=rnJa2Nf2L0U,3,"Miami, FL",South,2
+Antoinette,,1987,"""I Got An Attitude""",https://www.youtube.com/watch?v=Zhfm6dVj1QY,1,"Queens, NY",East Coast,12
 "Sweet Tee
-",Suga,1987,"""I Got Da Feelin""",https://www.youtube.com/watch?v=UKSI035_hm0,2
-Traedonya ,Sample This!,1987,"""The Boogaloo""",https://www.youtube.com/watch?v=pHx61x0M-ZQ,3
-Queen Latifah,,1988,"""Wrath of My Madness""",https://www.youtube.com/watch?v=fldVvxZfwCg,1
-Neneh Cherry,,1988,"""Buffalo Stance""",https://www.youtube.com/watch?v=JWsRz3TJDEY,2
-Monie Love,Juss Bad,1988,"""Free Style / Proud"" with Jus Bad",https://www.youtube.com/watch?v=YjDDFa1PgqY,3
-MC Trouble,,1988,"""(I Wanna) Make You Mine""",https://www.youtube.com/watch?v=1LK8EVRNXNE,4
-Michie Mee,,1988,"""Elements of Style""",https://www.youtube.com/watch?v=bwlHRSeeEbw,5
-Oaktown's 3.5.7,,1988,"""Juicy Gotcha Krazy""",https://www.youtube.com/watch?v=EFaXqgv6R6w,6
-Nikki D,,1989,"""My Love Is So Raw"" with Alyson Williams",https://www.youtube.com/watch?v=ZOdnIAhU-rw,1
-Ms. Melodie,(Boogie Down Productions),1989,"""Self Destruction"" by Stop the Violence Movement",https://www.youtube.com/watch?v=gTsIpZ_Si3A,2
-Betty Boo,,1989,"""Hey DJ / I Can't Dance (To That Music You're Playing)""",https://www.youtube.com/watch?v=FGRRBHER9X8,3
-MC Choice,,1989,"""I Need Some P****"" by Willie Dee (explicit)",https://www.youtube.com/watch?v=CjJXK8oZz9Y,4
-Smiley,,1989,"""But I'm Not Friendly""",https://www.youtube.com/watch?v=T4qAqlPUi5o,5
+",Suga,1987,"""I Got Da Feelin""",https://www.youtube.com/watch?v=UKSI035_hm0,2,"Queens, NY",East Coast,13
+Traedonya ,Sample This!,1987,"""The Boogaloo""",https://www.youtube.com/watch?v=pHx61x0M-ZQ,3,"New York, NY",East Coast,14
+Queen Latifah,,1988,"""Wrath of My Madness""",https://www.youtube.com/watch?v=fldVvxZfwCg,1,"Newark, NJ",East Coast,15
+Neneh Cherry,,1988,"""Buffalo Stance""",https://www.youtube.com/watch?v=JWsRz3TJDEY,2,"London, England",Outside US,1
+Monie Love,Juss Bad,1988,"""Free Style / Proud"" with Jus Bad",https://www.youtube.com/watch?v=YjDDFa1PgqY,3,"London, England",Outside US,2
+Michie Mee,,1988,"""Elements of Style""",https://www.youtube.com/watch?v=bwlHRSeeEbw,4,"Toronto, Canada
+",Outside US,3
+MC Trouble,,1988,"""(I Wanna) Make You Mine""",https://www.youtube.com/watch?v=1LK8EVRNXNE,5,"Los Angeles, CA
+",West Coast,2
+Oaktown's 3.5.7,,1988,"""Juicy Gotcha Krazy""",https://www.youtube.com/watch?v=EFaXqgv6R6w,6,"Oakland, CA",West Coast,3
+Ms. Melodie,(Boogie Down Productions),1989,"""Self Destruction"" by Stop the Violence Movement",https://www.youtube.com/watch?v=gTsIpZ_Si3A,1,"Brooklyn, NY
+",East Coast,16
+Smiley,,1989,"""But I'm Not Friendly""",https://www.youtube.com/watch?v=T4qAqlPUi5o,2,"Detroit, MI",Mid West,1
 "Sundance
-",,1989,"""Git On Up"" by Fast Eddie",https://www.youtube.com/watch?v=xHQwfrfCjNw,6
-Ya Kid K,Technotronic,1989,"""Pump Up The Jam""",https://www.youtube.com/watch?v=9EcjWd-O4jI,7
-Yo-Yo,,1990,"""Stompin' To The 90s""",https://www.youtube.com/watch?v=Bw1GxVRGFy8,1
-MC Smooth,,1990,"""Smooth & Legit""",https://www.youtube.com/watch?v=w2iOG8Vchb4,2
-Isis ,"(X Clan), Lin Que",1990,"""Rebel Soul""",https://www.youtube.com/watch?v=XIAOT_QfkBI,3
-Q-Tee,,1990,"""Filthy"" by Saint Etienne",https://www.youtube.com/watch?v=68d_wfuXcX4,4
-Dimples D,,1990,"""Sucker DJ""",https://www.youtube.com/watch?v=itmTgYrqxzk,5
-Tairrie B,,1990,"""Murder She Wrote""",https://www.youtube.com/watch?v=yG45At8jhd8,6
-Lady of Rage,,1991,"""Bring Em Home Safely"" by Chubb Rock",https://www.youtube.com/watch?v=O-ObmDSua1g,1
+",,1989,"""Git On Up"" by Fast Eddie",https://www.youtube.com/watch?v=xHQwfrfCjNw,3,"Chicago, IL",Mid West,2
+Ya Kid K,Technotronic,1989,"""Pump Up The Jam""",https://www.youtube.com/watch?v=9EcjWd-O4jI,4,"Chicago, IL",Mid West,3
+Betty Boo,,1989,"""Hey DJ / I Can't Dance (To That Music You're Playing)""",https://www.youtube.com/watch?v=FGRRBHER9X8,5,United Kingdom,Outside US,4
+MC Choice,,1989,"""I Need Some P****"" by Willie Dee (explicit)",https://www.youtube.com/watch?v=CjJXK8oZz9Y,6,"Houston, TX",South,3
+Nikki D,,1989,"""My Love Is So Raw"" with Alyson Williams",https://www.youtube.com/watch?v=ZOdnIAhU-rw,7,"Los Angeles, CA
+",West Coast,4
+Isis ,"(X Clan), Lin Que",1990,"""Rebel Soul""",https://www.youtube.com/watch?v=XIAOT_QfkBI,1,"Queens, NY",East Coast,17
+Dimples D,,1990,"""Sucker DJ""",https://www.youtube.com/watch?v=itmTgYrqxzk,2,"New York, NY",East Coast,18
+Q-Tee,,1990,"""Filthy"" by Saint Etienne",https://www.youtube.com/watch?v=68d_wfuXcX4,3,United Kingdom,Outside US,5
+Yo-Yo,,1990,"""Stompin' To The 90s""",https://www.youtube.com/watch?v=Bw1GxVRGFy8,4,"Los Angeles, CA
+",West Coast,5
+MC Smooth,,1990,"""Smooth & Legit""",https://www.youtube.com/watch?v=w2iOG8Vchb4,5,"Los Angeles, CA
+",West Coast,6
+Tairrie B,,1990,"""Murder She Wrote""",https://www.youtube.com/watch?v=yG45At8jhd8,6,"Los Angeles, CA",West Coast,7
 Overweight Pooch,,1991,"""I Like It"" with CeCe Peniston
-",https://www.youtube.com/watch?v=KjQOaEXAthk,2
-Left Eye,Lisa Lopes,1992,"""Ain't 2 Proud 2 Beg""",https://www.youtube.com/watch?v=XmH4_pr6mH0,1
-Sister Souljah,,1992,"""The Hate That Hate Produced""",https://www.youtube.com/watch?v=neNboHZ3paQ,2
-Mia X,,1992,"""Da Payback""",https://www.youtube.com/watch?v=iGwuKuR-FH4,3
-Suga-T,The Click,1992,Down and Dirty',https://www.youtube.com/watch?v=P14KN4gGp4s,4
-Missy Elliott,,1993," ""That's What Little Girls Are Made Of"" with Raven Symone",https://www.youtube.com/watch?v=tJg3G32tCdQ,1
-Me'shell Ndegeocello,,1993,"""If That's Your Boyfriend (He Wasn't Last Night)""",https://www.youtube.com/watch?v=UpdzEpGIqtY,2
-Boss,Bo$$,1993,"""Deeper""",https://www.youtube.com/watch?v=yYjwGXoXI8A,3
-Gripsta,Egypt,1993,"""Funk Gripsta"" on Ice T's 'Home Invasion'",https://www.youtube.com/watch?v=6Ta29dxwm3k,4
-The Conscious Daughters,,1993,"""Something To Ride To (Fonky Expedition)""",https://www.youtube.com/watch?v=57mCBzaxKOk,5
-Marvaless,,1994,"""Ghetto Blues""",https://www.youtube.com/watch?v=kYIMOihkiGw,1
-Lauryn Hill,The Fugees,1994,"""Nappy Heads""",https://www.youtube.com/watch?v=s8sNnNRhQ2g,2
-Bahamadia,,1994,"""Total Wreck""",https://www.youtube.com/watch?v=7AKfHDTW7nM,3
-Da Brat,,1994,"""Funkdafied""",https://www.youtube.com/watch?v=k9YikG3cRV8,4
-Ivy Queen,The Noise,1995,"""Somos Raperos Pero No Delincuentes"" (We are rappers, not criminals)",https://www.youtube.com/watch?v=jFRsjFyOulI,1
-Passion,,1995,"""Move On""",https://www.youtube.com/watch?v=O-AwZWczSzA,2
-Lil Kim,Junior M.A.F.I.A.,1995,"""Player's Anthem""",https://www.youtube.com/watch?v=hJW1h5U6SxM,3
-Gangasta Boo,,1995,,,4
-La Chat,,1995,"""Mystic Stylez"" by Three 6 Mafia",https://www.youtube.com/watch?v=E00IhxUsK3k,5
-Medusa,,1995,"""Kings & Queens"" by I Smooth 7",https://www.youtube.com/watch?v=eGgix5EwbTY,6
-Nonchalant,,1996,"""5 O'Clock""",https://www.youtube.com/watch?v=BQy1knJmGXg,1
-Foxy Brown,,1996,"""Touch Me Tease Me"" by Case, Nutty Professor soundtrack",https://www.youtube.com/watch?v=-cNu5k6KTmg,2
-Queen Pen,,1996,"""No Diggity"" with Blackstreet",https://www.youtube.com/watch?v=3KL9mRus19o,3
-Jean Grae,,1996,"""Negro League Baseball""",https://www.youtube.com/watch?v=CO9eZVaj7GA,4
-Magnolia Shorty,,1996,"""Monkey on Tha D***""",https://www.youtube.com/watch?v=YR7VbTbeIzI,5
-Heather B,,1996,"""All Glocks Down""",https://www.youtube.com/watch?v=eeevK4W4v5c,6
-Mo Thugs,Il Tru,1996,"""Ghetto Bluez""",https://www.youtube.com/watch?v=f63D5lNKCUE,7
-Apani B Fly,,1997,"""Estragen""",https://www.youtube.com/watch?v=TDc-QaS3XCw,1
-Angie Martinez,,1997,"""Heartbeat""",https://www.youtube.com/watch?v=6prqQU0ajCg,2
-Deadly Venoms,"N-Tyce, J-Boo, Champ MC and Finesse",1997,"""Venoms Everywhere""",https://www.youtube.com/watch?v=gDivufGgE_o,3
-Hurricane G,Def Squad,1997,"""Somebody Else""",https://www.youtube.com/watch?v=njlKqY6Zdl4,4
-Imani Coppola,,1997,"""Legend of a Cowgirl""",https://www.youtube.com/watch?v=n26hAOmkmFE,5
-Eve,,1998,"""Eve of Destruction""",https://www.youtube.com/watch?v=N_g0lxtw_hc,1
-Charli Baltimore,,1998,"""Money""",https://www.youtube.com/watch?v=d11-U-gaw9M,2
-Amil,,1998,"""Can I Get A ..."" with Jay-Z",https://www.youtube.com/watch?v=MUN9giYJhew,3
-Trina,,1998,"""Nann N****"" (Trick Daddy)",https://www.youtube.com/watch?v=Es0P1Xpb6Gc,4
-Eekwol,,1998,,,5
-Free,,1998,"""Patriots"" by Canibus",https://www.youtube.com/watch?v=68lKj8W-4Ro,6
-Mocha,,1998,"""Hit 'Em Wit Da Hee (Remix)""",https://www.youtube.com/watch?v=vklBeJNh5Eg,7
+",https://www.youtube.com/watch?v=KjQOaEXAthk,1,"Phoenix, AZ",South,4
+Lady of Rage,,1991,"""Bring Em Home Safely"" by Chubb Rock",https://www.youtube.com/watch?v=O-ObmDSua1g,2,"Los Angeles, CA",West Coast,8
+Sister Souljah,,1992,"""The Hate That Hate Produced""",https://www.youtube.com/watch?v=neNboHZ3paQ,1,"Bronx, NY",East Coast,19
+Left Eye,Lisa Lopes,1992,"""Ain't 2 Proud 2 Beg""",https://www.youtube.com/watch?v=XmH4_pr6mH0,2,"Atlanta, GA",South,5
+Mia X,,1992,"""Da Payback""",https://www.youtube.com/watch?v=iGwuKuR-FH4,3,"New Orleans, LA",South,6
+Suga-T,The Click,1992,Down and Dirty',https://www.youtube.com/watch?v=P14KN4gGp4s,4,"Vallejo, CA",West Coast,9
+Me'shell Ndegeocello,,1993,"""If That's Your Boyfriend (He Wasn't Last Night)""",https://www.youtube.com/watch?v=UpdzEpGIqtY,1,Washington D.C.,East Coast,20
+Boss,Bo$$,1993,"""Deeper""",https://www.youtube.com/watch?v=yYjwGXoXI8A,2,"Detroit, MI",Mid West,4
+Missy Elliott,,1993," ""That's What Little Girls Are Made Of"" with Raven Symone",https://www.youtube.com/watch?v=tJg3G32tCdQ,3,"Richmond, VA",South,7
+Gripsta,Egypt,1993,"""Funk Gripsta"" on Ice T's 'Home Invasion'",https://www.youtube.com/watch?v=6Ta29dxwm3k,4,"Oakland, CA
+",West Coast,10
+The Conscious Daughters,,1993,"""Something To Ride To (Fonky Expedition)""",https://www.youtube.com/watch?v=57mCBzaxKOk,5,"Oakland, CA
+",West Coast,11
+Lauryn Hill,The Fugees,1994,"""Nappy Heads""",https://www.youtube.com/watch?v=s8sNnNRhQ2g,1,"East Orange, NJ",East Coast,21
+Bahamadia,,1994,"""Total Wreck""",https://www.youtube.com/watch?v=7AKfHDTW7nM,2,"Philadelphia, PA",East Coast,22
+Da Brat,,1994,"""Funkdafied""",https://www.youtube.com/watch?v=k9YikG3cRV8,3,"Atlanta, GA",South,8
+Marvaless,,1994,"""Ghetto Blues""",https://www.youtube.com/watch?v=kYIMOihkiGw,4,"Sacramento, CA",West Coast,12
+Lil Kim,Junior M.A.F.I.A.,1995,"""Player's Anthem""",https://www.youtube.com/watch?v=hJW1h5U6SxM,1,"Brooklyn, NY",East Coast,23
+Passion,,1995,"""Move On""",https://www.youtube.com/watch?v=O-AwZWczSzA,2,"Detroit, MI",Mid West,5
+Ivy Queen,The Noise,1995,"""Somos Raperos Pero No Delincuentes"" (We are rappers, not criminals)",https://www.youtube.com/watch?v=jFRsjFyOulI,3,Puerto Rico,Puerto Rico,1
+Gangasta Boo,,1995,"""I Thought You Knew""",https://www.youtube.com/watch?v=rRC8hxytWIs,4,"Memphis, TN",South,9
+La Chat,,1995,"""Mystic Stylez"" by Three 6 Mafia",https://www.youtube.com/watch?v=E00IhxUsK3k,5,"Memphis, TN",South,10
+Medusa,,1995,"""Kings & Queens"" by I Smooth 7",https://www.youtube.com/watch?v=eGgix5EwbTY,6,"Los Angeles, CA
+",West Coast,13
+Nonchalant,,1996,"""5 O'Clock""",https://www.youtube.com/watch?v=BQy1knJmGXg,1,Washington D.C.,East Coast,24
+Foxy Brown,,1996,"""Touch Me Tease Me"" by Case, Nutty Professor soundtrack",https://www.youtube.com/watch?v=-cNu5k6KTmg,2,"Brooklyn, NY",East Coast,25
+Queen Pen,,1996,"""No Diggity"" with Blackstreet",https://www.youtube.com/watch?v=3KL9mRus19o,3,"Brooklyn, NY",East Coast,26
+Jean Grae,,1996,"""Negro League Baseball""",https://www.youtube.com/watch?v=CO9eZVaj7GA,4,"Brooklyn, NY",East Coast,27
+Heather B,,1996,"""All Glocks Down""",https://www.youtube.com/watch?v=eeevK4W4v5c,5,"Jersey City, NJ
+",East Coast,28
+Mo Thugs,Il Tru,1996,"""Ghetto Bluez""",https://www.youtube.com/watch?v=f63D5lNKCUE,6,"Cleveland, OH",Mid West,6
+Magnolia Shorty,,1996,"""Monkey on Tha D***""",https://www.youtube.com/watch?v=YR7VbTbeIzI,7,"New Orleans, LA",South,11
+Apani B Fly,,1997,"""Estragen""",https://www.youtube.com/watch?v=TDc-QaS3XCw,1,"Queens, NY",East Coast,29
+Angie Martinez,,1997,"""Heartbeat""",https://www.youtube.com/watch?v=6prqQU0ajCg,2,"Brooklyn, NY
+",East Coast,30
+Deadly Venoms,"N-Tyce, J-Boo, Champ MC and Finesse",1997,"""Venoms Everywhere""",https://www.youtube.com/watch?v=gDivufGgE_o,3,"New York, NY",East Coast,31
+Hurricane G,Def Squad,1997,"""Somebody Else""",https://www.youtube.com/watch?v=njlKqY6Zdl4,4,"Brooklyn, NY",East Coast,32
+Imani Coppola,,1997,"""Legend of a Cowgirl""",https://www.youtube.com/watch?v=n26hAOmkmFE,5,"Long Island, NY",East Coast,33
+Eve,,1998,"""Eve of Destruction""",https://www.youtube.com/watch?v=N_g0lxtw_hc,1,"Philadelphia, PA",East Coast,34
+Charli Baltimore,,1998,"""Money""",https://www.youtube.com/watch?v=d11-U-gaw9M,2,"Philadelphia, PA",East Coast,35
+Amil,,1998,"""Can I Get A ..."" with Jay-Z",https://www.youtube.com/watch?v=MUN9giYJhew,3,"New York, NY",East Coast,36
+Free,,1998,"""Patriots"" by Canibus",https://www.youtube.com/watch?v=68lKj8W-4Ro,4,"Boston, MA",East Coast,37
 Jamie Sommers,,1998,"""Bobby Did It (Spanish Fly)"" by Bobby Digital / RZA
-",https://www.youtube.com/watch?v=H42DcWVhhcU,8
-Sylk-E. Fyne,,1998,"""Romeo & Juliet""",https://www.youtube.com/watch?v=8t86Gsq1wWM,9
-Rah Digga,,1999,"""Imperial""",https://www.youtube.com/watch?v=0KdV6t78lHE,1
-Natina Reed,Blaque,1999,"""808""",https://www.youtube.com/watch?v=AmEO4Qp2mFw,2
-Rha Goddess,,1999,"""My Pen""",https://www.youtube.com/watch?v=PXgF08St3f4,3
-Katey Red,,1999,"""Where da melph at""",https://www.youtube.com/watch?v=o8ZeYslcGNg,4
-Cha Cha,,1999,"""New Millennium (What Cha Wanna Do)""",https://www.youtube.com/watch?v=mXgGWAp0KBo,5
-Lady Luck,,1999,Symphony 2000 with EPMD,https://www.youtube.com/watch?v=xp09snLms5E,6
-Infamous Sydnicate,Shawna,1999,"""Here I Go""",https://www.youtube.com/watch?v=qhDwULY_a9U,7
-Solè,,1999,"""Who Dat"" by J.T. Money",https://www.youtube.com/watch?v=5X0uSltBHhs,8
-Kiely Williams,3LW,2000,"""No More""",https://www.youtube.com/watch?v=drvS9w-lTMc,1
-Remy Ma,Mae West / May Day,2000,"""Ms. Martin"" on 'Yeeeah Baby' by Big Pun",https://www.youtube.com/watch?v=LYWHClvN_hE,2
-Lady May,,2000,"""Shysty Broads"" by The Madd Rapper",https://www.youtube.com/watch?v=Jg6AlwqdqOw,3
-Rasheeda,,2001,"""Do It""",https://www.youtube.com/watch?v=YYwMrbeEx_k,1
-Sarai,,2001,"""Same Ol' Same Ol'"" by PYT",https://www.youtube.com/watch?v=h1JfMvIgVog,2
-Lil Brianna,,2002,"""Kandi"" by Trina",https://www.youtube.com/watch?v=F7tWcHgqttw,1
-Psalm One,,2002,"""Spitting Vintage""",https://www.youtube.com/watch?v=Wu3irWgWN4Q,2
-Khia,,2002,"""My Neck, My Back""",https://www.youtube.com/watch?v=rDJu7r6OUvk,3
-Ms Dynamite,,2002,"""It Takes More""",https://www.youtube.com/watch?v=GSQHfChUqZY,4
-Ms. Jade,,2002,"""Big Head""",https://www.youtube.com/watch?v=Nb4m6H90OzM,5
-M.I.A.,,2003,"""Galang""",https://www.youtube.com/watch?v=yRvWQrGurkQ,1
-Jackie-O,,2003,"""Nookie""",https://www.youtube.com/watch?v=7lntMnFln88,2
-K-Mil,,2003,"""Quien Tiene Mas Flow""",https://www.youtube.com/watch?v=evWnvYSUf4Y,3
-Diamond,Crime Mob,2004,"""Knuck If You Buck""",https://www.youtube.com/watch?v=TC1oURSaYoQ,1
-Princess,Crime Mob,2004,"""Knuck If You Buck""",https://www.youtube.com/watch?v=TC1oURSaYoQ,2
-Estelle,,2004,"""Dance Bitch""",https://www.youtube.com/watch?v=e5Oea39zDRI,3
-K-Swift,,2004,"""Slide to the Left""",https://www.youtube.com/watch?v=BWpbV-DrI_0,4
-K.Flay,,2004,"""Suburban Rap Queen""",https://www.youtube.com/watch?v=c9qaJhj5ZdM,5
-Lady Sovereign,,2005,"""The Battle""",https://www.youtube.com/watch?v=IiBMzoXsHcc,1
-Kanary Diamonds,,2005,"""By the Bar"" by Mack 10",https://www.youtube.com/watch?v=aZdq2Ld_ngs,2
-Amanda Blank,,2005,"""Bump"" by Spank Rock",https://www.youtube.com/watch?v=4gdGJBYoaIY,3
-Audra The Rapper,,2005,"""I Got Yo Weave""",,4
-Dessa / Doomtree,,2005,,,5
-Empire ISIS,,2005,,,6
-Heather Hunter,,2005,"""So Serious""",,7
-Yo Majesty,Shunda K,2006,,,1
-Rye Rye,,2006,"""Shake It To The Ground""",,2
-Ak'Sent,,2006,"""Zingy""",,3
-Georgia Anne Muldrow,,2006,"""Patience""",,4
-Lega-C,,2006,"most popular for ""White Girl Raps Fast"" 2011",,5
-Tiffany Foxx,,2006,"""Shake That"" by Snoop Dogg",,6
-Young B,,2006,"""Chicken Noodle Soup""",,7
-Kellee Maize,,2007,"""Age of Feminine""",,1
-Mélange Lavonne,,2007,"""Gay Bash""",,2
-Lil Mama,,2007,"""Girlfriend"" (Avril Lavigne, remix)",,3
-Nicki Minaj,,2007,"Playtime Is Over' (mixtape)
-'Sucka Free' (mixtape)",,4
-Prima J,,2007,"""Rockstar""",,5
-3D Na'Tee,,2007,"Mixtape: 3's Company Vol.1: The Rapper, The Hustler, the Diva
-",,6
-Felicia Pearson,,2007,"""It's A Stick Up"" by Tony Yayo",,7
-Feloni,,2007,"""A Woman's Revenge"" ",,8
-Kid Sister,,2007,"""Pro Nails""",,9
-Sirah,,2007,Clean Windows Dirty Floors' EP,,10
-Invincible,,2008,"""Shapeshifters""",,1
-P-Star,,2008,"""Biggie Bounce""",,2
-Azealia Banks,,2008,"""Gimme a Chance"" as Miss Bank$",,3
-Angel Haze,,2009,New Moon' mixtape,,1
-Lola Monroe,,2009,"""Overtime""",,2
-Reema Major,,2009,,,3
-Colette Carr,,2009,"""Back It Up""",,4
-Dominique Young Unique,,2009,"""Hot Girl""",,5
-Nitty Scott,,2010,"""Monster""",,1
-Rapsody,,2010,"""Return of the B Girl""",,2
-Sasha Go Hard,,2011,"""Trust me"" by Buck 20 Brick Boyz",,1
-Becky G,,2011,"""Otis""",,2
-Dai Burger,,2011,"""Titty Attack"" with Junglepussy",,3
-Iggy Azalea,,2011,"""P****""",,4
-Kitty Pryde,,2011,,,5
-Kreayshawn,,2011,"""Gucci Gucci""",,6
-Snow Tha Product,,2011,"""Drunk Love""",,7
-V-Nasty,,2011,"""Whip Appeal"" by Guccia Mane",,8
-Lil Debbie,,2012,"""2 Cups""",,1
-Njena Reddd Foxxx,,2012,"""Ima Read""",,2
-Brooke Candy,,2012,"""Das Me""",,3
-Katie Got Bandz,,2012,"""They Know How I'm Rockin""",,4
-Gifted Gab,,2012,"""Orange Skyline",,5
-Sharaya J,,2013,"""Banji""",,1
-Junglepussy,,2013,"""Cream Team""",,2
-Nyemiah Supreme,,2013,"""Rock & Roll""",,3
-Awkwafina,,2013,"""Yellow Ranger""",,4
-Kiyanne,,2014,"""No Bars""",,1
-Amber,,2015,"""Shake That Brass""",,1
+",https://www.youtube.com/watch?v=H42DcWVhhcU,5,"New York, NY",East Coast,38
+Eekwol,,1998,,,6,"Saskatchewan, Canada",Outside US,6
+Trina,,1998,"""Nann N****"" (Trick Daddy)",https://www.youtube.com/watch?v=Es0P1Xpb6Gc,7,"Miami, FL",South,12
+Mocha,,1998,"""Hit 'Em Wit Da Hee (Remix)""",https://www.youtube.com/watch?v=vklBeJNh5Eg,8,"Richmond, VA",South,13
+Sylk-E. Fyne,,1998,"""Romeo & Juliet""",https://www.youtube.com/watch?v=8t86Gsq1wWM,9,"Los Angeles, CA",West Coast,14
+Rah Digga,,1999,"""Imperial""",https://www.youtube.com/watch?v=0KdV6t78lHE,1,"Newark, NJ",East Coast,39
+Natina Reed,Blaque,1999,"""808""",https://www.youtube.com/watch?v=AmEO4Qp2mFw,2,"New York, NY",East Coast,40
+Rha Goddess,,1999,"""My Pen""",https://www.youtube.com/watch?v=PXgF08St3f4,3,"New York, NY
+",East Coast,41
+Lady Luck,,1999,Symphony 2000 with EPMD,https://www.youtube.com/watch?v=xp09snLms5E,4,"Englewood, NJ",East Coast,42
+Cha Cha,,1999,"""New Millennium (What Cha Wanna Do)""",https://www.youtube.com/watch?v=mXgGWAp0KBo,5,"Detroit, MI",Mid West,7
+Infamous Sydnicate,Shawna,1999,"""Here I Go""",https://www.youtube.com/watch?v=qhDwULY_a9U,6,"Chicago, IL",Mid West,8
+Solè,,1999,"""Who Dat"" by J.T. Money",https://www.youtube.com/watch?v=5X0uSltBHhs,7,"Kansas, Missouri",Mid West,9
+Katey Red,,1999,"""Where da melph at""",https://www.youtube.com/watch?v=o8ZeYslcGNg,8,"New Orleans, LA",South,14
+Remy Ma,Mae West / May Day,2000,"""Ms. Martin"" on 'Yeeeah Baby' by Big Pun",https://www.youtube.com/watch?v=LYWHClvN_hE,1,"Bronx, NY",East Coast,43
+Lady May,,2000,"""Shysty Broads"" by The Madd Rapper",https://www.youtube.com/watch?v=Jg6AlwqdqOw,2,"Long Island, NY",East Coast,44
+Kiely Williams,3LW,2000,"""No More""",https://www.youtube.com/watch?v=drvS9w-lTMc,3,"Alexandria, VA",South,15
+Sarai,,2001,"""Same Ol' Same Ol'"" by PYT",https://www.youtube.com/watch?v=h1JfMvIgVog,1,"Kingston, NY",East Coast,45
+Rasheeda,,2001,"""Do It""",https://www.youtube.com/watch?v=YYwMrbeEx_k,2,"Atlanta, GA",South,16
+Khia,,2002,"""My Neck, My Back""",https://www.youtube.com/watch?v=rDJu7r6OUvk,1,"Philadephia, PA",East Coast,46
+Ms. Jade,,2002,"""Big Head""",https://www.youtube.com/watch?v=Nb4m6H90OzM,2,"Philadelphia, PA",East Coast,47
+Ms Dynamite,,2002,"""It Takes More""",https://www.youtube.com/watch?v=GSQHfChUqZY,3,"United Kingdom
+",Outside US,7
+Lil Brianna,,2002,"""Kandi"" by Trina",https://www.youtube.com/watch?v=F7tWcHgqttw,4,"Miami, FL",South,17
+Psalm One,,2002,"""Spitting Vintage""",https://www.youtube.com/watch?v=Wu3irWgWN4Q,5,"Chicago, IL",South,18
+M.I.A.,,2003,"""Galang""",https://www.youtube.com/watch?v=yRvWQrGurkQ,1,"United Kingdom
+",Outside US,8
+K-Mil,,2003,"""Quien Tiene Mas Flow""",https://www.youtube.com/watch?v=evWnvYSUf4Y,2,"San Juan, PR",Puerto Rico,2
+Jackie-O,,2003,"""Nookie""",https://www.youtube.com/watch?v=7lntMnFln88,3,"Ft. Lauderdale, FL",South,19
+K-Swift,,2004,"""Slide to the Left""",https://www.youtube.com/watch?v=BWpbV-DrI_0,1,"Baltimore, MD
+",East Coast,48
+K.Flay,,2004,"""Suburban Rap Queen""",https://www.youtube.com/watch?v=c9qaJhj5ZdM,2,"Wilmette, Illinois",Mid West,10
+Estelle,,2004,"""Dance Bitch""",https://www.youtube.com/watch?v=e5Oea39zDRI,3,"United Kingdom
+",Outside US,9
+Diamond,Crime Mob,2004,"""Knuck If You Buck""",https://www.youtube.com/watch?v=TC1oURSaYoQ,4,"Atlanta, GA",South,20
+Princess,Crime Mob,2004,"""Knuck If You Buck""",https://www.youtube.com/watch?v=TC1oURSaYoQ,5,"Atlanta, GA",South,21
+Amanda Blank,,2005,"""Bump"" by Spank Rock",https://www.youtube.com/watch?v=4gdGJBYoaIY,1,"Philadelphia, PA",East Coast,49
+Heather Hunter,,2005,"""So Serious""",https://www.youtube.com/watch?v=o_lqKWDRLDI,2,"Bronx, NY",East Coast,50
+Dessa / Doomtree,,2005,"""No D in Erogenous"" by Kanser",https://www.youtube.com/watch?v=ULmpNC8Bc-M,3,Minnesota,Mid West,11
+Lady Sovereign,,2005,"""The Battle""",https://www.youtube.com/watch?v=IiBMzoXsHcc,4,"United Kingdom
+",Outside US,10
+Audra The Rapper,,2005,"""I Love College"" 2009",https://www.youtube.com/watch?v=4KKt1g7kcpU,5,"Richmond, VA",South,22
+Kanary Diamonds,,2005,"""By the Bar"" by Mack 10",https://www.youtube.com/watch?v=aZdq2Ld_ngs,6,"Los Angeles, CA",West Coast,15
+Rye Rye,,2006,"""Shake It To The Ground"" with DJ Blaqstarr",https://www.youtube.com/watch?v=fHAigWTZioI,1,"Baltimore, MD
+",East Coast,51
+Young B,,2006,"""Chicken Noodle Soup""",https://www.youtube.com/watch?v=sFav9P54JUA,2,"Harlem, NY",East Coast,52
+Lega-C,,2006,"""White Girl Raps Fast"" 2011",https://www.youtube.com/watch?v=5MS7g-ki7iw,3,Oklahoma,Mid West,12
+Tiffany Foxx,,2006,"""Shake That"" by Snoop Dogg",https://www.youtube.com/watch?v=PJ1qTQ9NsOw,4,"St. Louis, MO",Mid West,13
+Yo Majesty,Shunda K,2006,"""Club Action"" 2007",https://www.youtube.com/watch?v=2pfQT7etnKg,5,"Tampa, FL",South,23
+Ak'Sent,,2006,"""Zingy"" featuring Beenie Man",https://www.youtube.com/watch?v=InP8cCMRURY,6,"Los Angeles, CA",West Coast,16
+Georgia Anne Muldrow,,2006,"""Patience""",https://www.youtube.com/watch?v=X0Wpg6jEQJE,7,"Los Angeles, CA",West Coast,17
+Kellee Maize,,2007,"""Age of Feminine""",https://www.youtube.com/watch?v=kjJfIMgsYn4,1,"Pittsburg, PA",East Coast,53
+Lil Mama,,2007,"""Girlfriend"" (Avril Lavigne, remix)",https://www.youtube.com/watch?v=EnwLrQ2ys_g,2,"Harlem, NY",East Coast,54
+Nicki Minaj,,2007,"""Jump Off 2007""",https://www.youtube.com/watch?v=cGMszqpAf9o,3,"Queens, NY",East Coast,55
+Felicia Pearson,,2007,"""It's A Stick Up"" by Tony Yayo",https://www.youtube.com/watch?v=NUTamtcVEYk,4,"Baltimore, MD
+",East Coast,56
+Sirah,,2007,"""Clean Windows Dirty Floors""",https://www.youtube.com/watch?v=T8g48nHZ3Pw,5,"Long Island, NY",East Coast,57
+Feloni,,2007,"""A Woman's Revenge"" ",https://www.youtube.com/watch?v=WvN4d-Y7VwY,6,"Detroit, MI ",Mid West,14
+Kid Sister,,2007,"""Pro Nails""",https://www.youtube.com/watch?v=WvN4d-Y7VwY,7,"Chicago, IL",Mid West,15
+3D Na'Tee,,2007,"""3rd Times a Charm"" 2008",https://www.youtube.com/watch?v=j23Bx2q6TMM,8,"New Orleans, LA",South,24
+Mélange Lavonne,,2007,"""Gay Bash""",https://www.youtube.com/watch?v=FdjSRu8na3o,9,"Rialto, CA",West Coast,18
+Prima J,,2007,"""Rockstar""",https://www.youtube.com/watch?v=ibb15n_QNwE,10,"Los Angeles, LA",West Coast,19
+P-Star,,2008,"""Biggie Bounce""",https://www.youtube.com/watch?v=5Wvx5rox_Ms,1,"Bronx, NY",East Coast,58
+Azealia Banks,,2008,Miss Bank$ the EP,https://www.youtube.com/watch?v=fEH6hgeH3F0,2,"Harlem, NY",East Coast,59
+Invincible,,2008,"""Shapeshifters""",https://www.youtube.com/watch?v=PvvaKfAfChA,3,"Detroit, MI",Mid West,16
+Lola Monroe,,2009,"""Overtime"" featuring Trina",https://www.youtube.com/watch?v=k9KybNv4uqE,1,"Washington, DC",East Coast,60
+Angel Haze,,2009,New Moon' mixtape,https://www.youtube.com/watch?v=7RiBJbydyRM,2,"Detroit, MI",Mid West,17
+Reema Major,,2009,"""Gucci Bag""",https://www.youtube.com/watch?v=iOBQ3DpCuMk,3,Sudan,Outside US,11
+Dominique Young Unique,,2009,"""Hot Girl""",https://www.youtube.com/watch?v=SmUM7XB_nz0,4,"Tampa, FL",South,25
+Colette Carr,,2009,"""Back It Up""",https://www.youtube.com/watch?v=w81jPa1WG88,5,"Malibu, CA",West Coast,20
+Nitty Scott,,2010,"""Monster""",https://www.youtube.com/watch?v=ybDYBtes800,1,"Orlando, FL",South,26
+Rapsody,,2010,"""Return of the B Girl""",https://www.youtube.com/watch?v=gfrc4MELOHU,2,North Carolina,South,27
+Dai Burger,,2011,"""Titty Attack"" with Junglepussy",https://www.youtube.com/watch?v=GMq7csOQsX8,1,"Queens, NY",East Coast,61
+Sasha Go Hard,,2011,"""Trust me"" by Buck 20 Brick Boyz",https://www.youtube.com/watch?v=SMIfjaSoHXY,2,"Chicago, IL",Mid West,18
+Iggy Azalea,,2011,"""Hell of a Life""",https://www.youtube.com/watch?v=FeRHf-ovbqo,3,"Sydney, Australia",Outside US,12
+Kitty Pryde,,2011,"""Orion's Belt"" with Riff Raff 2012",https://www.youtube.com/watch?v=2NNbeS-_EEA,4,"Daytona Beach, FL",South,28
+Becky G,,2011,"""Otis""",https://www.youtube.com/watch?v=UCt0T_bTdv0,5,"Los Angeles, CA",West Coast,21
+Kreayshawn,,2011,"""Gucci Gucci""",https://www.youtube.com/watch?v=6WJFjXtHcy4,6,"Oakland, CA",West Coast,22
+Snow Tha Product,,2011,"""Drunk Love""",https://www.youtube.com/watch?v=KZxwHHmb_J0,7,"San Diego, CA",West Coast,23
+V-Nasty,,2011,"""Whip Appeal"" by Gucci Mane",https://www.youtube.com/watch?v=94mgy3hb_-k,8,"Oakland, CA",West Coast,24
+Njena Reddd Foxxx,,2012,"""Ima Read""",https://www.youtube.com/watch?v=5a7toR0pm1g,1,"Brooklyn, NY",East Coast,62
+Katie Got Bandz,,2012,"""They Know How I'm Rockin""",https://www.youtube.com/watch?v=pgACTlfgLjI,2,"Chicago, IL",Mid West,19
+Lil Debbie,,2012,"""2 Cups""",https://www.youtube.com/watch?v=ykwwz20RULg,3,"Oakland, CA",West Coast,25
+Brooke Candy,,2012,"""Das Me""",https://www.youtube.com/watch?v=dHULK1M-P08,4,"Los Angeles, CA",West Coast,26
+Gifted Gab,,2012,"""Orange Skyline",https://www.youtube.com/watch?v=KOvLYMIb10g,5,"Seattle, Washington",West Coast,27
+Sharaya J,,2013,"""Banji""",https://www.youtube.com/watch?v=zwkbQleKThI,1,"Jersey City, NJ",East Coast,63
+Junglepussy,,2013,"""Cream Team""",https://www.youtube.com/watch?v=V9r3L0N95mQ,2,"Brooklyn, NY",East Coast,64
+Nyemiah Supreme,,2013,"""Rock & Roll""",https://www.youtube.com/watch?v=kNlGUEYQ1qg,3,"Queens, NY",East Coast,65
+Awkwafina,,2013,"""Yellow Ranger""",https://www.youtube.com/watch?v=ICKiNTXIrS4,4,"Queens, NY",East Coast,66
+Kiyanne,,2014,"""No Bars""",https://www.youtube.com/watch?v=CI9f1nrqMhA,1,"Queens, NY",East Coast,67
+Amber,,2015,"""Shake That Brass""",https://www.youtube.com/watch?v=BYGeGI1Ihlc,1,"Los Angeles, CA",West Coast,28

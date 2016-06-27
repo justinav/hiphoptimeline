@@ -29,9 +29,6 @@
 
   <style>
     @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
-    .rapperText {
-    font-size: 11px;
-    }
     * {
       -moz-osx-font-smoothing: grayscale;
       -webkit-font-smoothing: antialiased;
@@ -67,7 +64,7 @@
     }
     .sectionTitle {
       font-size: 2.2em;
-      margin: 2em auto;
+      margin: 2em auto 1em;
       text-align: center;
     }
     h3,p  {
@@ -94,20 +91,43 @@
     }
     /* Buttons */
     .buttonToolbar {
-      display: block;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
       margin: .5em auto;
       text-align: center;
+      max-width: 300px;
+      border: 2px solid mediumblue;
     }
     .buttonToolbar button {
-      background: #fff;
-      border: 2px solid mediumblue;
-      color: mediumblue;
+      flex: auto;
+      border-right: 2px solid mediumblue;
+      border-top: 0;
+      border-bottom: 0;
+      border-left: 0;
+      background: mediumblue;
+      color: #fff;
       font-weight: 700;
       padding: 6px 12px;
     }
     .buttonToolbar button:hover {
-      background: mediumblue;
-      color: #fff;
+      cursor: pointer;
+    }
+    .buttonToolbar button.inactive:hover {
+      background: Gold;
+      color: mediumblue;
+    }
+    .buttonToolbar button:last-of-type {
+      border-right: 0;
+    }
+    .buttonToolbar button.inactive {
+      background: #fff;
+      color: mediumblue;
     }
     /* Chart */
     .chart {
@@ -117,18 +137,26 @@
     .axis text {
       fill: mediumblue
     }
+    .x.axis text,
+    .y.axis text {
+      font-size: 11px;
+    }
     .axis line {
       stroke: mediumblue;
     }
-    .axis.y line,
     .axis.y path {
       stroke: none;
+    }
+    .axis.y line {
+      stroke: mediumblue;
+      opacity: .1;
     }
     .dots {
       fill: rgba(0,0,255,0.3);
     }
     .rapperText {
       fill: mediumblue;
+      font-size: 11px;
       font-weight: 700;
     }
     .domain {
@@ -230,7 +258,7 @@
         border-top: 0;
         position: static;
       }
-      .rapper:nth-of-type(even):after{
+      .rapper:nth-of-type(even):after {
         border-top: 0;
       }
     }
@@ -240,152 +268,224 @@
 <body>
   <header class="header">
     <h1 class="siteTitle">Hip Hop Timeline</h1>
-    <p class="description">Three years ago I started collecting the names of US based rappers who identified as women. Even though this list has a long ways to go, it's my starting point. Click on the "short" button to view a scatterplot of when rappers came onto the scene. Click on the "long" button to view a detailed timeline with links to videos</p>
-    <div class="buttonToolbar">
-      <a href="#short"><button>Short</button></a>
-      <a href="#long"><button>Long</button></a>
-    </div>
+    <p class="description">Three years ago I started collecting the names of US based rappers who identified as women.</p>
   </header>
   <main class="content"></main>
 </body>
 
 <script>
-  var margin = {top: 20, right: 50, bottom: 50, left: 50};
-  var width = 700 - margin.left - margin.right,
-  height = 200 - margin.top - margin.bottom;
-
-  var xScale = d3.time.scale()
-  .range([0, width]);
-
-  var yScale = d3.scale.linear()
-  .domain([0,12])
-  .range([height,0])
-
-  var xAxis = d3.svg.axis()
-  .scale(xScale)
-  .orient("bottom")
-  .ticks(6)
-  .tickFormat(d3.time.format("%Y"))
-
-  var yAxis = d3.svg.axis()
-  .scale(yScale)
-  .orient("left")
-  .ticks(4)
-
-  var parseDate = d3.time.format("%Y").parse,
-  formatDate = d3.time.format("%Y");
-
-  var scatterPlot = d3.select(".content")
-  .append("section")
-  .attr("class", "scatterPlot")
-  .attr("id", "short")
-
   d3.csv("rappersByYear.csv", function(error, data) {
     if (error) return console.warn(error);
 
-    scatterPlot.append("h2")
-    .attr("class", "sectionTitle")
-    .text("Years Rappers Premiered")
+    var parseDate = d3.time.format("%Y").parse,
+      formatDate = d3.time.format("%Y");
 
-    var svg = d3.select(".scatterPlot").append("svg")
-    .attr("class", "chart")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    var margin = {top: 10, right: 10, bottom: 30, left: 40};
+    var width = 600 - margin.left - margin.right,
+    height = 370 - margin.top - margin.bottom;
 
-    xScale.domain(d3.extent(data, function(d) {return parseDate(d.Year); })).nice();
+    var xScale = d3.scale.ordinal()
+        .rangeRoundBands([0,width], .5)
+        .domain(data.map(function(d){return d.USRegion}))
 
-    svg.append("g")
-    .attr("transform", "translate(0," + height + ")")
-    .attr("class", "x axis")
-    .call(xAxis)
+    var x2Scale = d3.scale.linear()
+        .domain([0,12])
+        .range([0,width])
 
-    svg.append("g")
-    .attr("class", "y axis")
-    .call(yAxis)
+    var y1Scale = d3.scale.linear()
+        .domain([0,68]).nice()
+        .range([height,0])
 
-    var circleGroups = svg.selectAll(".circleGroups")
-    .data(data)
-    .enter().append("g")
-      .attr("class", "circleGroups")
+    var y2Scale = d3.time.scale()
+        .domain(d3.extent(data, function(d) {return parseDate(d.Year); })).nice()
+        .range([height,0])
 
+    var xAxis = d3.svg.axis()
+        .scale(xScale)
+        .orient("bottom")
 
-    circleGroups.each(function() {
-      var rapperDot = d3.select(this);
-      rapperDot.attr("transform", function(d) {return "translate(" + xScale(parseDate(d.Year)) + "," + height + ")"})
-      .append("circle")
-      .attr("class", "dots")
-      .attr("r", 5)
-    })
+    var x2Axis = d3.svg.axis()
+        .scale(x2Scale)
+        .orient("bottom")
+        .ticks(6)
 
-    d3.selectAll(".circleGroups")
-      .transition()
-      .duration(3500)
-      .ease("linear")
-      .attr("transform", function(d) {return "translate(" + xScale(parseDate(d.Year)) + "," + yScale(d.GroupID) + ")"})
+    var y1Axis = d3.svg.axis()
+        .scale(y1Scale)
+        .orient("left")
+        .tickSize(-width)
+
+    var y2Axis = d3.svg.axis()
+        .scale(y2Scale)
+        .orient("left")
+        .tickSize(-width)
+        .tickFormat(d3.time.format("%Y"))
+
+    var regionGraph = d3.select(".content")
+        .append("section")
+        .attr("class", "regionGraph")
+        .attr("id", "region")
+
+    regionGraph.append("h2")
+        .attr("class", "sectionTitle")
+        .text("Rappers by Region")
+    regionGraph.append("p")
+        .attr('class', 'description')
+        .text("This graph represents where these MC's originated. East Coast includes DC and Baltimore. All of Virginia and Arizona are included in the South category. The bulk of the East Coast category is represented by MC's from New York, New Jersey and Philadelphia over a 40 year span.")
+
+    var regionSvg = d3.select(".regionGraph").append("svg")
+        .attr("class", "chart")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    regionSvg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .attr("class", "x axis")
+        .call(xAxis)
+
+    regionSvg.append("g")
+        .attr("class", "y axis")
+        .call(y2Axis)
+
+    var circleGroups = regionSvg.selectAll(".circleGroups")
+        .data(data)
+      .enter().append("g")
+        .attr("class", function(d) {return "circleGroups " + d.Name})
 
     circleGroups.on("mouseenter", function(){
-        d3.select(this).append("text")
+        d3.select(this)
+      .append("text")
         .attr("class", "rapperText")
+        .attr('dx', 45)
         .text(function(d) {return d.Name})
-      })
-      .on("mouseleave", function() {
+    })
+    .on("mouseleave", function() {
         d3.select(this).select("text").remove();
-      })
+    })
+    circleGroups.each(function() {
+        var rapperDot = d3.select(this);
+        rapperDot
+          .attr("transform", function(d) {return "translate(" + xScale(d.USRegion) + "," + y2Scale(parseDate(d.Year)) + ")"})
+          .append("rect")
+          .attr("class", "dots")
+          .attr("width", 40)
+          .attr("height", 4)
+    })
 
-    // LARGE Timeline
+    var buttonToolbar = d3.select(".content").append("div")
+        .attr("class","buttonToolbar")
+
+    buttonToolbar.append("button")
+        .attr("id","yearRegion")
+        .text("Show by Year")
+
+    buttonToolbar.append("button")
+        .attr("id","totalRegion")
+        .attr("class", "inactive")
+        .text("Show Total by Region")
+
+    buttonToolbar.append("button")
+        .attr("id","total")
+        .attr("class", "inactive")
+        .text("Total by Year")
+
+    d3.selectAll("#totalRegion").on("click", function(){
+        d3.select("#total").classed("inactive", true)
+        d3.select("#yearRegion").classed("inactive", true)
+        d3.select("#totalRegion").classed("inactive", false)
+
+        d3.select(".y.axis").call(y1Axis)
+        d3.select(".x.axis").call(xAxis)
+
+        d3.selectAll(".circleGroups")
+            .transition()
+            .duration(2000)
+            .ease("linear")
+            .attr("transform", function(d) {return "translate(" + xScale(d.USRegion) + "," + y1Scale(d.RegionID) + ")"})
+    })
+
+    d3.selectAll("#yearRegion").on("click", function(){
+        d3.select("#total").classed("inactive", true)
+        d3.select("#totalRegion").classed("inactive", true)
+        d3.select("#yearRegion").classed("inactive", false)
+
+        d3.select(".y.axis").call(y2Axis)
+        d3.select(".x.axis").call(xAxis)
+
+        d3.selectAll(".circleGroups")
+            .transition()
+            .duration(2000)
+            .ease("linear")
+            .attr("transform", function(d) {return "translate(" + xScale(d.USRegion) + "," + y2Scale(parseDate(d.Year)) + ")"})
+    })
+
+    d3.selectAll("#total").on("click", function(){
+        d3.select("#totalRegion").classed("inactive", true)
+        d3.select("#yearRegion").classed("inactive", true)
+        d3.select("#total").classed("inactive", false)
+
+        d3.select(".y.axis").call(y2Axis)
+        d3.select(".x.axis").call(x2Axis)
+
+        d3.selectAll(".circleGroups")
+            .transition()
+            .duration(2000)
+            .ease("linear")
+            .attr("transform", function(d) {return "translate(" + x2Scale(d.GroupID) + "," + y2Scale(parseDate(d.Year)) + ")"})
+    })
+
+      // LARGE Timeline
     var plainTimelineData = d3.nest()
-    .key(function(d) { return d.Year })
-    .entries(data)
+        .key(function(d) { return d.Year })
+        .entries(data)
 
     var largeTimeline = d3.select(".content")
-    .append("section")
-    .attr("class", "largeTimeline")
-    .attr("id", "long")
+        .append("section")
+        .attr("class", "largeTimeline")
+        .attr("id", "long")
 
     largeTimeline.append("h2")
-    .attr("class", "sectionTitle")
-    .text("The Long List")
+        .attr("class", "sectionTitle")
+        .text("The Long List")
 
     largeTimeline.append("p")
-    .attr("class", "description")
-    .text("hover over names to see first single. click on single to listen to it on YouTube.")
+        .attr("class", "description")
+        .text("hover over names to see first single. click on single to listen to it on YouTube.")
 
     var yearBlock = largeTimeline.selectAll(".yearBlock")
-    .data(plainTimelineData)
-    .enter().append("div")
-    .attr("class", "yearBlock")
+        .data(plainTimelineData)
+      .enter().append("div")
+        .attr("class", "yearBlock")
 
     yearBlock.append("h2")
-    .attr("class", "yearTitle")
-    .text(function(d) {return d.key})
+        .attr("class", "yearTitle")
+        .text(function(d) {return d.key})
 
     yearBlock.each(function() {
-     var rapperBlock = d3.select(this);
-     rapperBlock.selectAll("div")
-     .data(function(d) { return d.values; })
-     .enter().append("div")
-     .attr("class", "rapper")
-     .append("h3")
-     .text(function(d) {return d.Name; })
-     rapperBlock.selectAll(".rapper")
-     .append("p")
-     .text(function(d) {return d.SecondaryName; })
-   })
+        var rapperBlock = d3.select(this);
+        rapperBlock.selectAll("div")
+            .data(function(d) { return d.values; })
+          .enter().append("div")
+            .attr("class", "rapper")
+            .append("h3")
+            .text(function(d) {return d.Name; })
+        rapperBlock.selectAll(".rapper")
+           .append("p")
+           .text(function(d) {return d.SecondaryName; })
+    })
 
-    d3.selectAll(".rapper")
-    .on("mouseenter", function(){
-     d3.select(this)
-     .append("a")
-     .attr("class","outerUrl")
-     .attr("href", function(d) {return d.Url})
-     .attr("target", "_blank")
-     .text(function(d) {return d.Single})
-   })
+    d3.selectAll(".rapper").on("mouseenter", function(){
+        d3.select(this)
+        .append("a")
+        .attr("class","outerUrl")
+        .attr("href", function(d) {return d.Url})
+        .attr("target", "_blank")
+        .text(function(d) {return d.Single})
+     })
     .on("mouseleave" , function() {
-     d3.select(this).select(".outerUrl").remove()
-   })
+        d3.select(this).select(".outerUrl").remove()
+     })
 
   });
 </script>
