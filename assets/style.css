@@ -90,12 +90,11 @@ header {
   background: #fff0f0;
 }
 .header-overlay img{
+  float: left;
   height: auto;
+  max-width: 500px;
   opacity: .3;
   position: relative;
-}
-.float-left {
-  float: left;
 }
 /* Buttons */
 .buttonToolbar {
