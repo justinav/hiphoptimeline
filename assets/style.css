@@ -208,6 +208,11 @@ button.inactive:hover {
   -o-justify-content: center;
   justify-content: center;
 }
+.indexWrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .yearBlock {
   border: 5px solid mediumblue;
   margin: 1em auto 3em;

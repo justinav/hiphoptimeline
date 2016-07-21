@@ -193,17 +193,18 @@ d3.csv("rappersByYear.csv", function(error, data) {
       .attr("class", "description")
       .text("hover over names to see first single. click on single to listen to it on YouTube.")
 
-  var indexWrapper = largeTimeline.append("div")
+  var indexWrapper = largeTimeline.append("nav")
       .attr("class", "indexWrapper")
+      .append("ul")
 
-  indexWrapper.append("p").append("a")
+  indexWrapper.append("li").append("a")
       .attr("href", "#")
       .attr("class", "btn-top")
       .text("Top")
 
-  indexWrapper.selectAll("p")
+  indexWrapper.selectAll("li")
       .data(plainTimelineData)
-    .enter().append("p")
+    .enter().append("li")
       .append("a")
       .attr("href", function(d) {return "#" + d.key})
       .text(function(d) {return d.key})
