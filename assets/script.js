@@ -231,7 +231,7 @@ d3.csv("rappersByYear.csv", function(error, data) {
          .text(function(d) {return d.SecondaryName; })
   })
 
-  d3.selectAll(".rapper").on("mouseenter", function(){
+  d3.selectAll(".rapper").on("click", function(){
       d3.select(this)
       .append("a")
       .attr("class","outerUrl")
