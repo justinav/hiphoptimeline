@@ -118,6 +118,10 @@ h3, p {
   margin:.5em 0;
 }
 
+.big-text-section {
+  font-size: 30px;
+}
+
 .decade-nav a {
   font-family: 'Montserrat';
   font-weight: 900;
